@@ -21,7 +21,7 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
    </wsdl:message>
 
-   <wsdl:portType name="CalTax">
+   <wsdl:portType name="IncomeTax">
 
       <wsdl:operation name="CalTax" parameterOrder="wages">
 
@@ -33,7 +33,7 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
    </wsdl:portType>
 
-   <wsdl:binding name="CalTaxSoapBinding" type="impl:CalTax">
+   <wsdl:binding name="CalTaxSoapBinding" type="impl:IncomeTax">
 
       <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
 
