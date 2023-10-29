@@ -5,9 +5,9 @@
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
-package example.client2;
+package example.INclient;
 
-public class IncomeTaxSoapBindingStub extends org.apache.axis.client.Stub implements example.client2.IncomeTax {
+public class IncomeTaxSoapBindingStub extends org.apache.axis.client.Stub implements example.INclient.IncomeTax {
     private java.util.Vector cachedSerClasses = new java.util.Vector();
     private java.util.Vector cachedSerQNames = new java.util.Vector();
     private java.util.Vector cachedSerFactories = new java.util.Vector();

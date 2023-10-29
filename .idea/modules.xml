@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/experiment02.iml" filepath="$PROJECT_DIR$/experiment02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calculate-tax-web-service.iml" filepath="$PROJECT_DIR$/calculate-tax-web-service.iml" />
     </modules>
   </component>
 </project>

@@ -5,9 +5,9 @@
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
-package example.client;
+package example.OUTclient;
 
-public class CalTaxSoapBindingStub extends org.apache.axis.client.Stub implements example.client.CalTax_PortType {
+public class CalTaxSoapBindingStub extends org.apache.axis.client.Stub implements example.OUTclient.CalTax_PortType {
     private java.util.Vector cachedSerClasses = new java.util.Vector();
     private java.util.Vector cachedSerQNames = new java.util.Vector();
     private java.util.Vector cachedSerFactories = new java.util.Vector();

@@ -5,9 +5,9 @@
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
-package example.client;
+package example.OUTclient;
 
-public class CalTaxServiceLocator extends org.apache.axis.client.Service implements example.client.CalTaxService {
+public class CalTaxServiceLocator extends org.apache.axis.client.Service implements example.OUTclient.CalTaxService {
 
     public CalTaxServiceLocator() {
     }
@@ -39,7 +39,7 @@ public class CalTaxServiceLocator extends org.apache.axis.client.Service impleme
         CalTaxWSDDServiceName = name;
     }
 
-    public example.client.CalTax_PortType getCalTax() throws javax.xml.rpc.ServiceException {
+    public example.OUTclient.CalTax_PortType getCalTax() throws javax.xml.rpc.ServiceException {
        java.net.URL endpoint;
         try {
             endpoint = new java.net.URL(CalTax_address);
@@ -50,9 +50,9 @@ public class CalTaxServiceLocator extends org.apache.axis.client.Service impleme
         return getCalTax(endpoint);
     }
 
-    public example.client.CalTax_PortType getCalTax(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
+    public example.OUTclient.CalTax_PortType getCalTax(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
         try {
-            example.client.CalTaxSoapBindingStub _stub = new example.client.CalTaxSoapBindingStub(portAddress, this);
+            example.OUTclient.CalTaxSoapBindingStub _stub = new example.OUTclient.CalTaxSoapBindingStub(portAddress, this);
             _stub.setPortName(getCalTaxWSDDServiceName());
             return _stub;
         }
@@ -72,8 +72,8 @@ public class CalTaxServiceLocator extends org.apache.axis.client.Service impleme
      */
     public java.rmi.Remote getPort(Class serviceEndpointInterface) throws javax.xml.rpc.ServiceException {
         try {
-            if (example.client.CalTax_PortType.class.isAssignableFrom(serviceEndpointInterface)) {
-                example.client.CalTaxSoapBindingStub _stub = new example.client.CalTaxSoapBindingStub(new java.net.URL(CalTax_address), this);
+            if (example.OUTclient.CalTax_PortType.class.isAssignableFrom(serviceEndpointInterface)) {
+                example.OUTclient.CalTaxSoapBindingStub _stub = new example.OUTclient.CalTaxSoapBindingStub(new java.net.URL(CalTax_address), this);
                 _stub.setPortName(getCalTaxWSDDServiceName());
                 return _stub;
             }

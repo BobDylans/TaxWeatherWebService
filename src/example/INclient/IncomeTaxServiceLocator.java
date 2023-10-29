@@ -5,7 +5,7 @@
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
-package example.client2;
+package example.INclient;
 
 public class IncomeTaxServiceLocator extends org.apache.axis.client.Service implements IncomeTaxService {
 
@@ -39,7 +39,7 @@ public class IncomeTaxServiceLocator extends org.apache.axis.client.Service impl
         CalTaxWSDDServiceName = name;
     }
 
-    public example.client2.IncomeTax getCalTax() throws javax.xml.rpc.ServiceException {
+    public example.INclient.IncomeTax getCalTax() throws javax.xml.rpc.ServiceException {
        java.net.URL endpoint;
         try {
             endpoint = new java.net.URL(CalTax_address);
@@ -50,7 +50,7 @@ public class IncomeTaxServiceLocator extends org.apache.axis.client.Service impl
         return getCalTax(endpoint);
     }
 
-    public example.client2.IncomeTax getCalTax(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
+    public example.INclient.IncomeTax getCalTax(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
         try {
             IncomeTaxSoapBindingStub _stub = new IncomeTaxSoapBindingStub(portAddress, this);
             _stub.setPortName(getCalTaxWSDDServiceName());
@@ -72,7 +72,7 @@ public class IncomeTaxServiceLocator extends org.apache.axis.client.Service impl
      */
     public java.rmi.Remote getPort(Class serviceEndpointInterface) throws javax.xml.rpc.ServiceException {
         try {
-            if (example.client2.IncomeTax.class.isAssignableFrom(serviceEndpointInterface)) {
+            if (example.INclient.IncomeTax.class.isAssignableFrom(serviceEndpointInterface)) {
                 IncomeTaxSoapBindingStub _stub = new IncomeTaxSoapBindingStub(new java.net.URL(CalTax_address), this);
                 _stub.setPortName(getCalTaxWSDDServiceName());
                 return _stub;
