@@ -1,0 +1,19 @@
+<h2>And now... Some Services</h2>
+<ul>
+<li>CalTax <a href="http://localhost:8080/services/CalTax?wsdl"><i>(wsdl)</i></a></li>
+<ul>
+<li>CalTax
+</ul>
+<li>AdminService <a href="http://localhost:8080/services/AdminService?wsdl"><i>(wsdl)</i></a></li>
+<ul>
+<li>AdminService
+</ul>
+<li>Version <a href="http://localhost:8080/services/Version?wsdl"><i>(wsdl)</i></a></li>
+<ul>
+<li>getVersion
+</ul>
+<li>SOAPMonitorService <a href="http://localhost:8080/services/SOAPMonitorService?wsdl"><i>(wsdl)</i></a></li>
+<ul>
+<li>publishMessage
+</ul>
+</ul>
